@@ -8,13 +8,11 @@ interface ButtonProps {
   appName: string;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
-  return (
-    <button
-      className={className}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
-    >
-      {children}
-    </button>
-  );
-};
+
+
+export const SignUp = () => {
+  return <div style={{ width: 300  ,  border: "1px solid green"}}> 
+  <input type="text" placeholder="Username "/>
+  <input type="text" placeholder="Password" />
+  </div>
+}
